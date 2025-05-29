@@ -1,26 +1,219 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Yeni Renk Paleti */
+    --primary: #101217; /* Ana arkaplan - koyu */
+    --accent: #aa916d; /* Vurgu rengi - toprak */
+    --secondary: #5d7789; /* İkincil - gri-mavi */
+    --surface: #26384b; /* Yüzey - orta koyu mavi */
+    --text-primary: #f9f8f1; /* Ana metin - açık krem */
+    --border-detail: #5d7789; /* Kenarlık - gri-mavi */
+
+    /* Tailwind Variables */
+    --background: 16 18 23; /* #101217 */
+    --foreground: 249 248 241; /* #f9f8f1 */
+    --primary-color: 170 145 109; /* #aa916d */
+    --secondary-color: 93 119 137; /* #5d7789 */
+    --surface-color: 38 56 75; /* #26384b */
+    --border: 93 119 137; /* #5d7789 */
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    border-color: rgb(var(--border) / 0.1);
+  }
+  body {
+    background: var(--primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Modern Gradients */
+.gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    #1a1e26 50%,
+    var(--surface) 100%
+  );
+}
+
+.gradient-accent {
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    #b59c7a 50%,
+    var(--secondary) 100%
+  );
+}
+
+.gradient-surface {
+  background: linear-gradient(
+    135deg,
+    var(--surface) 0%,
+    #2f4454 50%,
+    var(--primary) 100%
+  );
+}
+
+/* Glass Effect - Modern */
+.glass-modern {
+  background: rgba(38, 56, 75, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(93, 119, 137, 0.2);
+}
+
+.glass-accent {
+  background: rgba(170, 145, 109, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(170, 145, 109, 0.3);
+}
+
+/* Card Effects */
+.card-modern {
+  background: var(--surface);
+  border: 1px solid rgba(93, 119, 137, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-modern:hover {
+  background: #2f4454;
+  border-color: rgba(170, 145, 109, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(16, 18, 23, 0.4);
+}
+
+/* Button Styles */
+.btn-accent {
+  background: var(--accent);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background: #b59c7a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(170, 145, 109, 0.3);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #6a8396;
+  transform: translateY(-2px);
+}
+
+/* Text Styles */
+.text-accent {
+  color: var(--accent);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+/* Hover Effects */
+.hover-accent:hover {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(170, 145, 109, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Floating Animation */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Pulse Animation */
+.pulse-accent {
+  animation: pulse-accent 2s infinite;
+}
+
+@keyframes pulse-accent {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Border Utilities */
+.border-accent {
+  border-color: var(--accent);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.border-detail {
+  border-color: rgba(93, 119, 137, 0.2);
 }

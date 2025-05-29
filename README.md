@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pasia Sanat Akademisi
 
-## Getting Started
+Modern ve profesyonel müzik akademisi website'i. Next.js 15, TypeScript ve Tailwind CSS ile geliştirilmiştir.
 
-First, run the development server:
+## 🎵 Özellikler
+
+- **Modern UI/UX**: Koyu tema ile şık ve profesyonel tasarım
+- **Responsive Design**: Mobil ve desktop için optimize edilmiş
+- **Multi-Page Yapısı**: Ana sayfa, Hakkımızda, Eğitimlerimiz, Galeri, İletişim sayfaları
+- **Interaktif Galeriler**: Swiper.js ile gelişmiş resim galerisi
+- **Google Maps Entegrasyonu**: İletişim sayfasında adres haritası
+- **Modern Animasyonlar**: Smooth geçişler ve hover efektleri
+
+## 🚀 Teknolojiler
+
+- **Next.js 15** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Swiper.js** - Modern slider/galeri
+- **Lucide React** - İkonlar
+- **Google Maps Embed** - Harita entegrasyonu
+
+## 📱 Sayfalar
+
+- **Ana Sayfa** (`/`) - Hero bölümü ve kısa tanıtım
+- **Hakkımızda** (`/hakkimizda`) - Akademi hakkında detaylı bilgi
+- **Eğitimlerimiz** (`/egitimlerimiz`) - Sunulan kurslar ve eğitimler
+- **Galeri** (`/galeri`) - Akademi fotoğrafları
+- **İletişim** (`/iletisim`) - İletişim formu ve bilgileri
+
+## 🎨 Tasarım
+
+- **Renk Paleti**: Koyu tema (#101217, #f9f8f1, #26384b, #5d7789, #aa916d)
+- **Glassmorphism**: Modern cam efektleri
+- **Gradient Backgrounds**: Dinamik arkaplan geçişleri
+- **Mobile-First**: İlk önce mobil için tasarlandı
+
+## 🏗️ Kurulum
 
 ```bash
+# Bağımlılıkları yükle
+npm install
+
+# Development server'ı başlat
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Production build
+npm run build
+
+# Production'ı başlat
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📍 Lokasyon
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Pasia Sanat Akademisi**  
+Kısıklı Mahallesi, Yusuf Kemal Sokak No:4  
+İstanbul, Türkiye
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📞 İletişim
 
-## Learn More
+Müzik eğitimi ve kurs bilgileri için iletişim sayfamızı ziyaret edin.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Pasia Sanat Akademisi** - İstanbul'un kalbinde kaliteli müzik eğitimi 🎼
