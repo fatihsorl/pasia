@@ -9,12 +9,13 @@ export default function Home() {
       <section className="py-20 gradient-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
-              <span className="text-accent">Pasia Sanat Akademisi</span>'ne Hoş Geldiniz
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              <span className="text-accent">Pasia Sanat Akademisi</span>&apos;ne Hoş Geldiniz
             </h2>
-            <p className="text-xl text-primary/80 mb-12 leading-relaxed">
-              İstanbul'un kalbinde, müzik sevgisini paylaşan bir akademi olarak her yaştan öğrencimize
-              kaliteli müzik eğitimi sunuyoruz. Profesyonel eğitmenlerimizle birlikte müzik yolculuğunuza başlayın.
+            <p className="text-lg md:text-xl text-primary/80 max-w-3xl mx-auto leading-relaxed">
+              İstanbul&apos;un kalbinde, müzik sevgisini paylaşan bir akademi olarak,
+              her yaştan öğrencimize kaliteli müzik eğitimi sunuyoruz. Akademimizi keşfedin,
+              müziğin büyülü dünyasına adım atın.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

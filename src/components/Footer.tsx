@@ -22,8 +22,8 @@ const Footer = () => {
                                     <span className="text-xs text-secondary">Sanat Akademisi</span>
                                 </div>
                             </div>
-                            <p className="text-primary/80 leading-relaxed mb-6 max-w-md">
-                                İstanbul'da müzik sevgisini paylaşan bir akademi olarak,
+                            <p className="text-primary/80 mb-6 leading-relaxed">
+                                İstanbul&apos;un kalbinde, müzik sevgisini paylaşan bir akademi olarak
                                 her yaştan öğrencimize kaliteli müzik eğitimi sunuyoruz.
                             </p>
 

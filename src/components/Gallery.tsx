@@ -76,8 +76,9 @@ const Gallery = () => {
                                 Akademi Galerisi
                             </span>
                         </h2>
-                        <p className="text-xl text-primary/80 max-w-3xl mx-auto leading-relaxed">
-                            Akademimizden ve öğrencilerimizin başarılarından kareler
+                        <p className="text-lg md:text-xl text-primary/80 max-w-3xl mx-auto leading-relaxed px-4">
+                            Akademimizin atmosferini ve eğitim ortamlarımızı keşfedin. Burada müziğin
+                            büyülü dünyasına adım atabilirsiniz.
                         </p>
                     </div>
 
@@ -182,7 +183,7 @@ const Gallery = () => {
                                 className="inline-flex items-center gap-3 bg-accent hover:bg-[#b59c7a] text-primary px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover-glow"
                             >
                                 <Camera className="w-6 h-6" />
-                                Instagram'da Takip Et
+                                Instagram&apos;da Takip Et
                             </a>
                         </div>
                     </div>

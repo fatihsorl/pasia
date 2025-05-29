@@ -78,7 +78,7 @@ const About = () => {
                             </span>
                         </h2>
                         <p className="text-sm md:text-lg lg:text-xl xl:text-2xl text-primary/80 max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto leading-relaxed px-3">
-                            İstanbul'un kalbinde, müzik sevgisini paylaşan bir akademi olarak,
+                            İstanbul&apos;un kalbinde, müzik sevgisini paylaşan bir akademi olarak,
                             her yaştan öğrencimize kaliteli müzik eğitimi sunuyoruz.
                         </p>
                     </div>
@@ -93,8 +93,8 @@ const About = () => {
                                 </span>
                             </h3>
                             <div className="space-y-4 lg:space-y-6 xl:space-y-8 text-primary/80 leading-relaxed">
-                                <p className="text-base lg:text-lg xl:text-xl">
-                                    <span className="text-accent font-semibold">Kısıklı mahallesi Yusuf Kemal sokak No:4'te</span> bulunan akademimizde,
+                                <p className="text-xs md:text-base lg:text-lg xl:text-xl">
+                                    <span className="text-accent font-semibold">Kısıklı mahallesi Yusuf Kemal sokak No:4&apos;te</span> bulunan akademimizde,
                                     müziğin evrensel dilini öğrenmek isteyen herkesi bekliyoruz.
                                 </p>
                                 <p className="text-base lg:text-lg xl:text-xl">
